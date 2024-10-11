@@ -253,7 +253,7 @@ public class Aplicacion
 
                         File archivo = new File("src/docs/historial.txt");
 
-                        try(FileWriter fw = new FileWriter(archivo))
+                        try(FileWriter fw = new FileWriter(archivo, true))
                         {
                             fw.write(String.format("Origen: %s, Destino: %s, Cantidad: %.2f, Fecha: %s"
                                     , monedaInicial, monedaFinal, cantidad, fecha));
